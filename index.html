@@ -6,65 +6,45 @@
   <link rel="stylesheet" href="style.css">
   <script type="text/javascript" src="script.js"></script>
 </head>
+
 <body>
-  <div class="main">
-    <!--
-    <img class="main-img" src="pingu2.jpg">
-    -->
-    
-    <div class="score-area">
-      <div class="block" onclick="OnClick(arguments[0], true, 20)"></div>
-      <div class="block">20</div>
-      <div class="block" onclick="OnClick(arguments[0], false, 20)"></div>
+  <div id="round">Round 1</div>
 
-      <div class="block" onclick="OnClick(arguments[0], true, 19)"></div>
-      <div class="block">19</div>
-      <div class="block" onclick="OnClick(arguments[0], false, 19)"></div>
+  <button class="round-btn" onclick="NextRound()">NextRound</button>
 
-      <div class="block" onclick="OnClick(arguments[0], true, 18)"></div>
-      <div class="block">18</div>
-      <div class="block" onclick="OnClick(arguments[0], false, 18)"></div>
+  <div class="score-area">
+    <div class="block" onclick="OnClick(arguments[0], true, 20)"></div>
+    <div class="block">20</div>
+    <div class="block" onclick="OnClick(arguments[0], false, 20)"></div>
 
-      <div class="block" onclick="OnClick(arguments[0], true, 17)"></div>
-      <div class="block">17</div>
-      <div class="block" onclick="OnClick(arguments[0], false, 17)"></div>
+    <div class="block" onclick="OnClick(arguments[0], true, 19)"></div>
+    <div class="block">19</div>
+    <div class="block" onclick="OnClick(arguments[0], false, 19)"></div>
 
-      <div class="block" onclick="OnClick(arguments[0], true, 16)"></div>
-      <div class="block">16</div>
-      <div class="block" onclick="OnClick(arguments[0], false, 16)"></div>
+    <div class="block" onclick="OnClick(arguments[0], true, 18)"></div>
+    <div class="block">18</div>
+    <div class="block" onclick="OnClick(arguments[0], false, 18)"></div>
 
-      <div class="block" onclick="OnClick(arguments[0], true, 15)"></div>
-      <div class="block">15</div>
-      <div class="block" onclick="OnClick(arguments[0], false, 15)"></div>
+    <div class="block" onclick="OnClick(arguments[0], true, 17)"></div>
+    <div class="block">17</div>
+    <div class="block" onclick="OnClick(arguments[0], false, 17)"></div>
 
-      <div class="block" onclick="OnClick(arguments[0], true, 25)"></div>
-      <div class="block">bull</div>
-      <div class="block" onclick="OnClick(arguments[0], false, 25)"></div>
-    </div>
+    <div class="block" onclick="OnClick(arguments[0], true, 16)"></div>
+    <div class="block">16</div>
+    <div class="block" onclick="OnClick(arguments[0], false, 16)"></div>
 
-    <br>
+    <div class="block" onclick="OnClick(arguments[0], true, 15)"></div>
+    <div class="block">15</div>
+    <div class="block" onclick="OnClick(arguments[0], false, 15)"></div>
 
-    <div class="point-area">
-      <div id="player1" class="point">0</div>
-      <div id="player2" class="point">0</div>
-    </div>
-    <!--
-    <div class="calculator">
-      <button onclick="input(7)">7</button>
-      <button onclick="input(8)">8</button>
-      <button onclick="input(9)">9</button>
-      <button onclick="input(4)">4</button>
-      <button onclick="input(5)">5</button>
-      <button onclick="input(6)">6</button>
-      <button onclick="input(1)">1</button>
-      <button onclick="input(2)">2</button>
-      <button onclick="input(3)">3</button>
-      <button onclick="clear()">C</button>
-      <button onclick="input(0)">0</button>
-      <button onclick="input(00)">00</button>
-    </div>
-    <button class="regist-btn" onclick="regist()">Regist</button>
-    -->
+    <div class="block" onclick="OnClick(arguments[0], true, 25)"></div>
+    <div class="block">bull</div>
+    <div class="block" onclick="OnClick(arguments[0], false, 25)"></div>
+  </div>
+
+  <div class="point-area">
+    <div id="player1" class="point">0</div>
+    <div id="player2" class="point">0</div>
   </div>
 </body>
 </html>

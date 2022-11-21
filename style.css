@@ -1,45 +1,58 @@
-.main {
-  text-align: center;
-}
-
 body {
+  text-align: center;
   background-color:#141414;
   color: aliceblue;
   font-size: 65px;
+
+  /* 左右中央揃え */
+  width: 80%;
+  margin: 0 auto;
+  max-width: 800px;
 }
-.main-img {
-  width: 400px;
+
+.score-area {
+  /* 左右中央揃え */
+  width: 100%;
+  margin: 0 auto;
+  max-width: 450px;
+
+  /* グリッドレイアウト */
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(7, 150px);
 }
 
 .block {
   width: 150px;
   height: 150px;
+  line-height: 150px; /* heightと同じ高さにして上下中央揃えに */
   border-width: 4px;
   border-style: solid;
   border-color: aliceblue;
-}
-
-.score-area {
-  margin-left: auto;
-  margin-right: auto;
-  display: grid; /* グリッドレイアウト */
-  /*width: 400px;*/
-  /*height: 600px;*/
-  grid-template-columns: repeat(3, 150px);
-  grid-template-rows: repeat(7, 150px);
 }
 
 .point-area {
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  /*width: 400px;*/
-  /*height: 600px;*/
 }
 
 .point {
   width: 400px;
   height: 100px;
+  line-height: 100px; /* heightと同じ高さにして上下中央揃えに */
+  border-width: 4px;
+  border-style: solid;
+  border-color: aliceblue;
+}
+
+.round-btn {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 250px;
+  height: 120px;
+  font-size: 40px;
 }
 
 /* ダブルタップによる拡大防止 */
