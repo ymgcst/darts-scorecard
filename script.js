@@ -1,5 +1,8 @@
 let g_isPlayer1 = true
 
+const g_audioMark = new Audio("mark.mp3")
+const g_audioButton = new Audio("button.mp3")
+
 document.addEventListener('DOMContentLoaded', function (){
 
   // DOM読み込み完了時に呼ばれるハンドラ
@@ -54,6 +57,9 @@ function OnClick(e, isPlayer1, point) {
   else {
     alert("error")
   }
+  
+  g_audioMark.currentTime = 0
+  g_audioMark.play()
 }
 
 function Next() {
@@ -64,6 +70,9 @@ function Next() {
   }
 
   DrawBlock()
+
+  g_audioButton.currentTime = 0
+  g_audioButton.play()
 }
 
 function NextRound() {
